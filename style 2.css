@@ -1,0 +1,217 @@
+*{
+    padding: 5px;
+    margin: 5px;
+}
+
+h1{
+    font-size: 50px;
+    color:black;
+    font-family:;
+}
+
+h2{
+    font-size: 50px;
+    color:black;
+    font-family:;
+}
+
+
+.box {
+    padding: 20px;
+    margin: 35px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel box {
+    padding: 20px;
+    margin: 50px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    width: 50%;
+    height: 50%;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+.main-container{
+    display: flex;
+    padding: 50px;
+}
+
+.box1{
+    width: 75%;
+    height: 75%;
+    margin: 100px;
+    padding: 100px;
+    background-color:bisque;
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+/* any divise width will be 100% */
+/* when we keep the cursor on that then that will show some effect */
+/* for curving edges - border-radius */
+/* sometimes the image will overflow the box and wont make the curve visible so we have to add  */
+
+
+.box:hover{
+    border:deeppink;
+    box-shadow: 0px 10px 20px 0px black ;
+    /* format of shadow: x-axis y-axis area darkness(darker shadow) colour */
+    /* we can also give -ve values for x and y axises then the shadow will appear in the -ve axis side */
+    /* whenever we have block like structure we can use shadow to give shadow effect
+     top to bottm:y axis and left to right: x axis (1st x-axis then y-axis comes */
+}
+
+.box:hover .box-content h4{
+    color:rgb(157, 218, 26);
+
+}
+/* when we keep the cursor anywhere in the box then the changes will also happen to the h4   */
+
+
+
+.box:hover .box-img img{
+    transform: scale(1.1);
+    /* when we want to increase the size of the imag when we keep the cursor on it */
+     /* image will become bigger */
+    transition: .5s;
+    /* t make it look smooth othewise it will directly go to the final size, basically we want like zooming effects */
+    
+}
+
+.box-img{
+    height: 300px;
+    overflow: hidden;
+    /* when we put the above effect the imag may overfoe to avoid it we use overflow hidden in this  */
+}
+
+.box-img img{
+    transition: .5s;
+    /* to make the image to go to its original position smoothly */
+}
+
+.box-content{
+    margin: 10px;
+}
+
+.box-content h4{
+    color: rgb(226, 43, 43);
+}
+
+.box-content p{
+    opacity: 7;
+    margin-bottom: 20px;
+    /* the above gives space bwt know more and the content */
+}
+/* opacity the content visibility */
+
+.box1:hover{
+    border:deeppink;
+    box-shadow: 0px 10px 20px 0px black ;
+    /* format of shadow: x-axis y-axis area darkness(darker shadow) colour */
+    /* we can also give -ve values for x and y axises then the shadow will appear in the -ve axis side */
+    /* whenever we have block like structure we can use shadow to give shadow effect
+     top to bottm:y axis and left to right: x axis (1st x-axis then y-axis comes */
+}
+
+.box1:hover .box-content h4{
+    color:rgb(157, 218, 26);
+
+}
+/* when we keep the cursor anywhere in the box then the changes will also happen to the h4   */
+
+
+
+.box1:hover .box-img img{
+    transform: scale(1.1);
+    /* when we want to increase the size of the imag when we keep the cursor on it */
+     /* image will become bigger */
+    transition: .5s;
+    /* t make it look smooth othewise it will directly go to the final size, basically we want like zooming effects */
+    
+}
+
+.box1-img{
+    height: 300px;
+    overflow: hidden;
+    /* when we put the above effect the imag may overfoe to avoid it we use overflow hidden in this  */
+}
+
+.box1-img img{
+    transition: .5s;
+    /* to make the image to go to its original position smoothly */
+}
+
+.box1-content{
+    margin: 10px;
+}
+
+.box1-content h4{
+    color: rgb(226, 43, 43);
+}
+
+.box1-content p{
+    opacity: 7;
+    margin-bottom: 20px;
+    /* the above gives space bwt know more and the content */
+}
+/* opacity the content visibility */
+
+
+.btn-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.btn-style{
+    text-decoration: none;
+    background-image:linear-gradient(60deg,  rgb(109, 12, 62),  rgb(188, 106, 148)  );
+    color: gold;
+    margin-top: 20px;
+    /* the above gives space bwt know more and the content */
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+
+/* h-over effect: when we keep cursor on that pic or text then to get differnet effects like
+shadow colour change etc */
+
+.btn-style :hover{
+    background-color: rgb(157, 218, 26);
+    color: aliceblue;
+    /* effects come when we keep the cursor on the btn */
+    text-decoration: dashed;
+    box-shadow: 0px 3px 10px 0px black;
+}
